@@ -21,16 +21,16 @@ export default function Home() {
           Follow us
         </p>
         <div className={styles.icons}>
-          <a href="https://www.facebook.com/codestation21/" target="_blank">
+          <a href="https://www.facebook.com/codestation21/" target="_blank" rel="noreferrer">
             <Icon icon="carbon:logo-facebook" />
           </a>
-          <a href="https://twitter.com/codestation21" target="_blank">
+          <a href="https://twitter.com/codestation21" target="_blank" rel="noreferrer">
             <Icon icon="bytesize:twitter" />
           </a>
-          <a href="https://www.linkedin.com/company/codestation21/" target="_blank">
+          <a href="https://www.linkedin.com/company/codestation21/" target="_blank" rel="noreferrer">
             <Icon icon="foundation:social-linkedin" />
           </a>
-          <a href="https://github.com/codestation21" target="_blank">
+          <a href="https://github.com/codestation21" target="_blank" rel="noreferrer">
             <Icon icon="bx:bxl-github" />
           </a>
         </div>

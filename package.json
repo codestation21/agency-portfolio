@@ -8,10 +8,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/inter": "^4.5.1",
     "@iconify/react": "^3.1.2",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.64",
+    "@mui/material": "^5.2.8",
+    "embla-carousel-react": "^6.0.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
     "next": "12.0.7",
+    "next-optimized-images": "^2.6.2",
+    "number-counter": "^1.0.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-odometerjs": "^2.1.2",
+    "react-scroll": "^1.8.4",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "eslint": "8.6.0",

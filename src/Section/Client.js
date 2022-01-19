@@ -12,7 +12,7 @@ import styles from "Styles/Client/Client.styles";
 
 const Client = () => {
     return (
-        <Box component="section" sx={styles.Container}>
+        <Box component="section" sx={styles.Container} id="client">
             <SectionHeading
                 value1="What Our Client Say"
                 value2="About Ourself"

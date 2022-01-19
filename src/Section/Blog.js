@@ -9,7 +9,7 @@ import Company from "Components/Blog/Company";
 
 const Blog = () => {
     return (
-        <Container maxWidth={false} disableGutters as="section" sx={{ py: "5em" }}>
+        <Container maxWidth={false} disableGutters as="section" sx={{ py: "5em" }} id="blog">
             <SectionHeading
                 value1="Every Single Update"
                 value2="News & Blogs"

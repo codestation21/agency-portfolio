@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Stack, Box, ButtonBase, Drawer } from "@mui/material";
+import { Link } from "react-scroll";
 
 //Icons
 import ArrowForwardTwoToneIcon from '@mui/icons-material/ArrowForwardTwoTone';
@@ -20,10 +21,17 @@ const Bar = () => {
     };
     return (
         <Stack direction="row" sx={{ justifyContent: "right" }}>
-            <ButtonBase sx={styles.SeeProjectBtn}>
-                See Projects
-                <ArrowForwardTwoToneIcon />
-            </ButtonBase>
+            <Link
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                <ButtonBase sx={styles.SeeProjectBtn}>
+                    See Projects
+                    <ArrowForwardTwoToneIcon />
+                </ButtonBase>
+            </Link>
             <ButtonBase sx={styles.ToogleButton} onClick={toggleDrawer(true)} className={drawer ? "active" : ""}>
                 <Box className="ripple1"></Box>
                 <Box className="ripple2"></Box>

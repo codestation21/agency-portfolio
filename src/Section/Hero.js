@@ -12,7 +12,7 @@ import styles from "Styles/Hero/Hero.styles";
 
 const Hero = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={styles.Container} as="section">
+        <Container maxWidth={false} disableGutters sx={styles.Container} as="section" id="home">
             <HeroContent />
             <Box component="img" src={HeroPng} alt="Hero Svg" sx={styles.HeroImage} />
             <Box component="img" src={Particle} alt="Hero Svg" sx={styles.Paticle} />

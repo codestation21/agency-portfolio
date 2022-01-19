@@ -37,7 +37,7 @@ const Portfolio = () => {
         setItems(updateItem);
     }, [Portfolios])
     return (
-        <Container maxWidth={false} disableGutters as="section" sx={styles.Container}>
+        <Container maxWidth={false} disableGutters as="section" sx={styles.Container} id="portfolio">
             <SectionHeading
                 value1="Latest Project That"
                 value2="Recently Done"

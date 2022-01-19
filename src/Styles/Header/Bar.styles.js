@@ -56,6 +56,8 @@ const styles = {
         zIndex: '9999999999',
         '& .MuiDrawer-paper': {
             width: {
+                xxl: "28%",
+                xl: "30%",
                 lg: "32%",
                 md: "36%",
                 smd: "50%",

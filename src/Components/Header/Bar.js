@@ -20,29 +20,23 @@ const Bar = () => {
         setDrawer(open);
     };
     return (
-        <Box sx={{ textAlign: "right" }}>
-            <Stack direction="row" sx={{ justifyContent: "right", textAlign: "right" }}>
-                <Box>
-                    <Link
-                        to="portfolio"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                    >
-                        <ButtonBase sx={styles.SeeProjectBtn}>
-                            See Projects
-                            <ArrowForwardTwoToneIcon />
-                        </ButtonBase>
-                    </Link>
-                </Box>
-                <Box>
-                    <ButtonBase sx={styles.ToogleButton} onClick={toggleDrawer(true)} className={drawer ? "active" : ""}>
-                        <Box className="ripple1"></Box>
-                        <Box className="ripple2"></Box>
-                        <Box className="ripple3"></Box>
-                    </ButtonBase>
-                </Box>
-            </Stack>
+        <Stack direction="row" sx={{ justifyContent: "right" }}>
+            <Link
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={500}
+            >
+                <ButtonBase sx={styles.SeeProjectBtn}>
+                    See Projects
+                    <ArrowForwardTwoToneIcon />
+                </ButtonBase>
+            </Link>
+            <ButtonBase sx={styles.ToogleButton} onClick={toggleDrawer(true)} className={drawer ? "active" : ""}>
+                <Box className="ripple1"></Box>
+                <Box className="ripple2"></Box>
+                <Box className="ripple3"></Box>
+            </ButtonBase>
             <Drawer
                 anchor="right"
                 open={drawer}
@@ -54,7 +48,7 @@ const Bar = () => {
             >
                 <Drawers toggleDrawer={toggleDrawer} />
             </Drawer>
-        </Box>
+        </Stack>
     );
 };
 export default Bar;

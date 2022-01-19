@@ -9,7 +9,7 @@ const styles = {
     },
     Image: {
         width: {
-            md: "80%",
+            md: "65%",
             smd: "60%",
             lsm: "50%",
             sm: "60%",

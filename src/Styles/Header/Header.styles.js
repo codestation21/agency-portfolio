@@ -3,7 +3,10 @@ const styles = {
         position: "fixed",
         top: 0,
         left: 0,
-        py: "10px",
+        py: {
+            xxl: "14px",
+            xxs: "10px"
+        },
         zIndex: "999",
         "&.sticky": {
             backgroundColor: "background.default",

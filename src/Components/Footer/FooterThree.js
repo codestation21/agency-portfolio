@@ -47,7 +47,7 @@ const FooterThree = () => {
             </Typography>
             <Box component="form" onSubmit={handleSubmit(onSubmit)}>
                 <InputBase
-                    placeholder="Write Message"
+                    placeholder="Write Email"
                     sx={styles.InputField}
                     {...register(
                         'email',
@@ -75,7 +75,7 @@ const FooterThree = () => {
                 >
                     {!loading && !message &&
                         <>
-                            Send Message
+                            Subscribe
                             <ArrowForwardTwoToneIcon />
                         </>
                     }

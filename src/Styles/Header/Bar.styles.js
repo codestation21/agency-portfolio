@@ -40,7 +40,15 @@ const styles = {
                 }
             }
         }
-    }
+    },
+    Drawer: {
+        zIndex: '9999999999',
+        '& .MuiDrawer-paper': {
+            width: "32%",
+            py: "2.5em",
+            px: "2em"
+        }
+    },
 };
 
 export default styles;

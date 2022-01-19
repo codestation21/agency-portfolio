@@ -4,6 +4,9 @@ import { Stack, Box, ButtonBase, Drawer } from "@mui/material";
 //Icons
 import ArrowForwardTwoToneIcon from '@mui/icons-material/ArrowForwardTwoTone';
 
+//Components
+import Drawers from "./Bar/Drawers";
+
 //Styles
 import styles from "Styles/Header/Bar.styles";
 
@@ -33,8 +36,9 @@ const Bar = () => {
                 ModalProps={{
                     disableScrollLock: true
                 }}
+                sx={styles.Drawer}
             >
-                Hello World
+                <Drawers toggleDrawer={toggleDrawer} />
             </Drawer>
         </Stack>
     );

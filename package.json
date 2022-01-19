@@ -26,7 +26,8 @@
     "react-dom": "17.0.2",
     "react-odometerjs": "^2.1.2",
     "react-scroll": "^1.8.4",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "rodal": "^1.8.1"
   },
   "devDependencies": {
     "eslint": "8.6.0",

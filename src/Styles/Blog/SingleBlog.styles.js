@@ -51,7 +51,31 @@ const styles = {
             marginLeft: "10px",
             marginBottom: "-1px"
         }
-    }
+    },
+    Modal: {
+        zIndex: '999999 !important',
+        '& .rodal-dialog': {
+            backgroundColor: 'primary.card_bg',
+            pr: {
+                smd: '15px',
+                xxs: '2px'
+            },
+            width: {
+                lg: '992px !important',
+                md: '900px !important',
+                smd: '700px !important',
+                lsm: '600px !important',
+                msm: '540px !important',
+                sm: '430px !important',
+                xs: '320px !important',
+                xxs: '280px !important'
+            },
+            height: {
+                lg: '580px !important',
+                xxs: '500px !important'
+            }
+        }
+    },
 };
 
 export default styles;

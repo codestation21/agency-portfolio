@@ -14,7 +14,7 @@ const Solution = () => {
                     Solutions.map((solution, i) => (
                         <Grid item md={3} key={i}>
                             <Box sx={{ textAlign: "center" }}>
-                                <Box width="90%" component="img" src={solution.icon} />
+                                <Box width="80%" component="img" src={solution.icon} />
                                 <Typography variant="h6" component="h6" sx={styles.Title}>
                                     {solution.title}
                                 </Typography>

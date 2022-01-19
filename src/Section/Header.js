@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Grid } from "@mui/material";
+import { Container, Box, Grid } from "@mui/material";
 
 //Components
 import Logo from "Components/Header/Logo";
@@ -17,19 +17,21 @@ const Header = () => {
         });
     }, []);
     return (
-        <Container maxWidth={false} disableGutters as="header" className={scroll ? "sticky" : ""} sx={styles.Container}>
-            <Grid container spacing={2} sx={{ alignItems: "center" }}>
-                <Grid item md={3}>
-                    <Logo />
+        <Box component="header" className={scroll ? "sticky" : ""} sx={styles.Container}>
+            <Container maxWidth={false} disableGutters sx={{ py: "10px" }}>
+                <Grid container spacing={2} sx={{ alignItems: "center" }}>
+                    <Grid item md={3}>
+                        <Logo />
+                    </Grid>
+                    <Grid item md={6}>
+                        <Nav />
+                    </Grid>
+                    <Grid item md={3}>
+                        <Bar />
+                    </Grid>
                 </Grid>
-                <Grid item md={6}>
-                    <Nav />
-                </Grid>
-                <Grid item md={3}>
-                    <Bar />
-                </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </Box>
     );
 };
 export default Header;

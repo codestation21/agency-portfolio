@@ -62,6 +62,10 @@ const theme = createTheme({
                         paddingRight: '3%',
                     },
                     '@media (min-width: 992px)': {
+                        paddingLeft: '3%',
+                        paddingRight: '3%',
+                    },
+                    '@media (min-width: 1200px)': {
                         paddingLeft: '5%',
                         paddingRight: '5%',
                     }

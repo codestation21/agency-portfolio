@@ -5,7 +5,12 @@ const styles = {
     },
     Content: {
         position: "relative",
-        height: "26em",
+        height: {
+            md: "26em",
+            smd: "21em",
+            lsm: "20em",
+            xxs: "auto"
+        },
     },
     Image: {
         width: "100%",
@@ -14,18 +19,44 @@ const styles = {
         borderRadius: "10px"
     },
     TopContainer: {
-        position: "absolute",
+        position: {
+            smd: "absolute",
+            xxs: "initial"
+        },
         backgroundColor: "background.default",
         bottom: "0",
-        left: "10%",
-        right: "10%",
-        transform: "translateY(50%)",
-        p: "25px 20px",
-        boxShadow: theme => `0 0 20px ${theme.palette.primary.box_shadow_black}`,
+        left: {
+            md: "10%",
+            sm: "3%"
+        },
+        right: {
+            md: "10%",
+            sm: "3%"
+        },
+        transform: {
+            smd: "translateY(50%)",
+            xxs: "translateY(0%)"
+        },
+        p: {
+            smd: "25px 20px",
+            xxs: "0px"
+        },
+        mt: {
+            smd: "0px",
+            xxs: "20px"
+        },
+        boxShadow: {
+            smd: theme => `0 0 20px ${theme.palette.primary.box_shadow_black}`,
+            xxs: "unset"
+        },
         borderRadius: "10px"
     },
     BlogInfo: {
         mr: "3rem",
+        mb: {
+            lsm: "0px",
+            xxs: "5px"
+        },
         fontSize: "15px",
         a: {
             textDecoration: "none",

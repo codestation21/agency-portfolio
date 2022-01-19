@@ -28,11 +28,11 @@ const SingleBlog = () => {
         // header.style.paddingRight = "0px";
     };
     return (
-        <Box sx={{ mt: "4rem" }}>
+        <Box sx={{ mt: "4rem", mb: "5.5em" }}>
             <Grid container spacing={4}>
                 {Blogs &&
                     Blogs.map((blog, i) => (
-                        <Grid item md={4} key={i}>
+                        <Grid item md={4} lsm={6} xxs={12} key={i}>
                             <Box sx={styles.BoxContainer}>
                                 <Box component="img" src={blog.image} alt={blog.title} sx={styles.Image} />
                                 <Box sx={styles.Content}>

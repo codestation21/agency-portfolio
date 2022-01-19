@@ -6,6 +6,15 @@ const styles = {
     },
     Description: {
         fontSize: "15px"
+    },
+    Image: {
+        width: {
+            md: "80%",
+            smd: "60%",
+            lsm: "50%",
+            sm: "60%",
+            xxs: "65%"
+        }
     }
 };
 

@@ -13,7 +13,12 @@ const styles = {
         mt: "5px"
     },
     Title: {
-        fontSize: "2rem",
+        fontSize: {
+            lg: "2rem",
+            md: "1.6rem",
+            xxs: "0rem",
+
+        },
         lineHeight: 1.5,
         fontWeight: 500
     }

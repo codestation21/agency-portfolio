@@ -35,7 +35,11 @@ const styles = {
     },
     Copyright: {
         flex: 1,
-        fontWeight: 500
+        fontWeight: 500,
+        textAlign: {
+            sm: "unset",
+            xxs: "center"
+        }
     }
 };
 

@@ -1,12 +1,25 @@
 const styles = {
     Container: {
-        mt: "12em",
+        mt: {
+            msm: "12em",
+            sm: "7em",
+            xxs: "6em"
+        },
         pb: "5rem",
         position: "relative"
     },
     Title: {
         fontWeight: 700,
-        mb: "25px"
+        mb: "25px",
+        fontSize: {
+            lg: "2.125rem",
+            md: "2rem",
+            lsm: "2.125rem",
+            msm: "2rem",
+            sm: "1.9rem",
+            xs: "1.8rem",
+            xxs: "1.5rem"
+        }
     },
     Description: {
         mb: "15px",
@@ -46,18 +59,35 @@ const styles = {
         borderRadius: "5px",
         fontSize: "14px",
         fontWeight: 500,
+        transition: "0.3s ease",
         svg: {
             color: "background.default",
             fontSize: "17px",
             ml: "10px",
             mb: "-1px"
+        },
+        "&:hover": {
+            backgroundColor: "primary.main",
+            color: "background.default"
         }
     },
     Image: {
         position: "absolute",
-        right: "-2%",
+        right: {
+            lg: "0%",
+            xxs: "0%",
+
+        },
         bottom: "0",
-        width: "68%"
+        width: {
+            xxl: "52%",
+            md: "65%",
+            xxs: "0%"
+        },
+        display: {
+            md: "unset",
+            xxs: "none"
+        }
     }
 };
 

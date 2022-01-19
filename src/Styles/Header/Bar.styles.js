@@ -5,11 +5,22 @@ const styles = {
         p: "12px 18px",
         fontSize: "15px",
         fontWeight: 500,
+        border: "1px solid transparent",
+        transition: "0.3s ease",
         svg: {
             fontSize: "18px",
             ml: "8px",
             mb: "-1px"
-        }
+        },
+        "&:hover": {
+            backgroundColor: "transparent",
+            color: "text.primary",
+            borderColor: "text.primary"
+        },
+        display: {
+            sm: "unset",
+            xxs: "none"
+        },
     },
     ToogleButton: {
         ml: "10px",
@@ -44,9 +55,25 @@ const styles = {
     Drawer: {
         zIndex: '9999999999',
         '& .MuiDrawer-paper': {
-            width: "32%",
-            py: "2.5em",
-            px: "2em"
+            width: {
+                lg: "32%",
+                md: "36%",
+                smd: "50%",
+                msm: "65%",
+                sm: "70%",
+                xs: "80%",
+                xxs: "85%"
+            },
+            py: {
+                sm: "2.5em",
+                xs: "1.5em",
+                xxs: "1em"
+            },
+            px: {
+                sm: "2em",
+                xs: "1em",
+                xxs: "0.8em"
+            }
         }
     },
 };

@@ -1,7 +1,11 @@
 const styles = {
     Embla: {
         overflow: "hidden",
-        px: "10%",
+        px: {
+            md: "10%",
+            sm: "3%",
+            xxs: "3%"
+        },
         pt: "5em",
     },
     EmblaContainer: {
@@ -9,7 +13,15 @@ const styles = {
     },
     EmblaSlide: {
         position: "relative",
-        flex: "0 0 40%",
+        flex: {
+            lg: "0 0 40%",
+            md: "0 0 55%",
+            smd: "0 0 70%",
+            lsm: "0 0 80%",
+            msm: "0 0 90%",
+            xs: "0 0 90%",
+            xxs: "0 0 100%"
+        },
         backgroundColor: "background.default",
         boxShadow: theme => `3px 4px 3px ${theme.palette.primary.box_shadow_client}`,
         mx: "15px",

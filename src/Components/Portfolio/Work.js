@@ -9,13 +9,16 @@ import styles from "Styles/Portfolio/Work.styles";
 
 const Work = ({ works }) => {
     return (
-        <Grid container rowSpacing={6} columnSpacing={22}>
+        <Grid container rowSpacing={6} columnSpacing={{ xxl: 45, md: 22, smd: 10, lsm: 8, msm: 4, sm: 2, xxs: 2 }}>
             {works &&
                 works.map((work, i) => (
-                    <Grid item md={6} key={i}>
+                    <Grid item sm={6} xxs={12} key={i}>
                         <Box sx={{
                             ...styles.ImageContainer,
-                            marginLeft: `${i % 2 ? "unset" : "auto"}`
+                            marginLeft: {
+                                lsm: `${i % 2 ? "unset" : "auto"}`,
+                                sm: "unset"
+                            }
                         }}>
                             <Link href={work.url}>
                                 <a target="_blank">
@@ -27,7 +30,7 @@ const Work = ({ works }) => {
                                     </Box>
                                     <Typography
                                         variant="h5"
-                                        component="h6"
+                                        component="h5"
                                         sx={styles.WorkTitle}
                                     >
                                         {work.name}

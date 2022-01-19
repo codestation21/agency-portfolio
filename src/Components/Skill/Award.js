@@ -14,12 +14,12 @@ const Award = () => {
         <Box>
             <Divider sx={styles.Divider} />
             <Grid container spacing={2} sx={{ alignItems: "center" }}>
-                <Grid item md={8}>
+                <Grid item md={8} xxs={12}>
                     <Box>
                         <Grid container spacing={2}>
                             {Awards &&
                                 Awards.map((award, i) => (
-                                    <Grid item md={4} key={i}>
+                                    <Grid item xxs={4} key={i}>
                                         <Box sx={{ textAlign: "center" }}>
                                             <Typography variant="h4" component="h4" sx={styles.AwardNumber}>
                                                 <Stack direction="row" sx={{ justifyContent: "center" }}>
@@ -42,7 +42,7 @@ const Award = () => {
                         </Grid>
                     </Box>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item md={4} xxs={0} sx={{ display: { md: "unset", xxs: "none" } }}>
                     <Box>
                         <Typography variant="h5" component="h5" sx={styles.Title}>
                             Great Achievements <br />

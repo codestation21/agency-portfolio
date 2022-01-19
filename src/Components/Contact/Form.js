@@ -40,8 +40,8 @@ const Form = () => {
     }
     return (
         <Box sx={{ mt: "3em" }} component="form" onSubmit={handleSubmit(onSubmit)}>
-            <Grid container spacing={2}>
-                <Grid item md={3}>
+            <Grid container spacing={{ md: 2, sm: 3, xxs: 2 }}>
+                <Grid item md={3} lsm={6} xxs={12}>
                     <InputBase
                         placeholder="Your Full Name"
                         endAdornment={
@@ -61,7 +61,7 @@ const Form = () => {
                         </Typography>
                     )}
                 </Grid>
-                <Grid item md={3}>
+                <Grid item md={3} lsm={6} xxs={12}>
                     <InputBase
                         placeholder="Email Address"
                         endAdornment={
@@ -90,7 +90,7 @@ const Form = () => {
                         </Typography>
                     )}
                 </Grid>
-                <Grid item md={3}>
+                <Grid item md={3} lsm={6} xxs={12}>
                     <InputBase
                         placeholder="Write Message"
                         multiline
@@ -120,7 +120,7 @@ const Form = () => {
                         </Typography>
                     )}
                 </Grid>
-                <Grid item md={3}>
+                <Grid item md={3} lsm={6} xxs={12}>
                     <Box>
                         <ButtonBase
                             type="submit"

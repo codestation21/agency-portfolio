@@ -1,15 +1,58 @@
 const styles = {
     CrossButton: {
         backgroundColor: "primary.main",
-        p: "8px",
+        p: {
+            xs: "8px",
+            xxs: "3px"
+        },
         mb: "5px",
+        ml: {
+            xs: "0px",
+            xxs: "10px"
+        },
         borderRadius: "50%",
-        color: "background.default"
+        color: "background.default",
+        border: "1px solid transparent",
+        transition: "0.3s ease",
+        "&:hover": {
+            backgroundColor: "transparent",
+            color: "text.primary",
+            borderColor: "text.primary"
+        }
     },
     Description: {
         mt: "3em",
         mb: "2em",
-        fontSize: "15px"
+        fontSize: "15px",
+        display: {
+            md: "block",
+            xxs: "none"
+        }
+    },
+    Navs: {
+        textAlign: "left",
+        my: "2em",
+        a: {
+            m: "0 5px",
+            display: "block",
+            borderBottom: theme => `1px solid ${theme.palette.primary.box_shadow_black}`,
+            pb: "5px",
+            "&.active": {
+                button: {
+                    color: "primary.main"
+                }
+            }
+        },
+        display: {
+            md: "none",
+            xxs: "block"
+        }
+    },
+    Buttons: {
+        fontSize: "16px",
+        borderRadius: "5px",
+        p: "5px 10px",
+        fontWeight: 600
     },
     Address: {
         mt: "15px",

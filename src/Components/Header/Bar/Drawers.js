@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, ButtonBase } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as Scroll } from "react-scroll";
 
 //Icons
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
@@ -8,6 +9,9 @@ import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, YoutubeIcon, 
 
 //Logo
 import Logo from "Assets/header/logo.png";
+
+//Data
+import Navs from "Data/Header/Navs.data";
 
 //Styles
 import styles from "Styles/Header/Dialogs.styles";
@@ -26,6 +30,25 @@ const Drawers = ({ toggleDrawer }) => {
             <Typography variant="body1" component="p" sx={styles.Description}>
                 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and will give you a complete account of the system and expound the actual teachings of the great explore
             </Typography>
+            <Box sx={styles.Navs}>
+                {Navs &&
+                    Navs.map((nav, i) => (
+                        <Scroll
+                            key={i}
+                            activeClass='active'
+                            to={nav.Id}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            onClick={toggleDrawer(false)}
+                        >
+                            <ButtonBase sx={styles.Buttons}>
+                                {nav.name}
+                            </ButtonBase>
+                        </Scroll>
+                    ))
+                }
+            </Box>
             <Stack direction="row" sx={styles.Address}>
                 <Box>
                     <MapIcon />

@@ -3,7 +3,6 @@ const styles = {
         backgroundColor: "background.default",
         borderRadius: "30px",
         boxShadow: theme => `12px 6px 40px ${theme.palette.primary.box_show_blog}`,
-        mb: "5.5em"
     },
     Image: {
         borderRadius: "30px 30px 0 0",
@@ -25,7 +24,11 @@ const styles = {
     Title: {
         fontWeight: 700,
         letterSpacing: "1.2px",
-        mb: "15px"
+        mb: "15px",
+        fontSize: {
+            lg: "1.25rem",
+            md: "1.2rem"
+        }
     },
     TimeIcon: {
         mb: "-4px",
@@ -50,6 +53,11 @@ const styles = {
             fontSize: "17px",
             ml: "10px",
             mb: "-1px"
+        },
+        transition: "0.3s ease",
+        "&:hover": {
+            backgroundColor: "primary.main",
+            color: "background.default"
         }
     }
 };

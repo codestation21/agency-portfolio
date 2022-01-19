@@ -1,7 +1,11 @@
 const styles = {
     Title: {
         fontWeight: 700,
-        fontSize: "2rem",
+        fontSize: {
+            sm: "2rem",
+            xs: "1.6rem",
+            xxs: "1.5rem"
+        },
         mb: "15px"
     },
     Description: {
@@ -27,8 +31,12 @@ const styles = {
             fontSize: "17px",
             ml: "10px",
             mb: "-3px"
+        },
+        transition: "0.3s ease",
+        "&:hover": {
+            backgroundColor: "primary.main",
+            color: "background.default"
         }
-
     }
 };
 

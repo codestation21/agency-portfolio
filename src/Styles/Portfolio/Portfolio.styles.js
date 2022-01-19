@@ -23,20 +23,27 @@ const styles = {
         zIndex: "-1"
     },
     ButtonGroup: {
-        button: {
-            color: "text.primary",
-            m: "0 2px",
-            height: 0,
-            minHeight: 0,
-            maxHeight: 0,
-            minWidth: 0,
-            p: "20px 18px",
-            fontSize: "15px",
-            fontWeight: 500,
-            textTransform: "capitalize",
-            "&.Mui-selected": {
+        "& .MuiTabs-flexContainer": {
+            flexWrap: "wrap",
+            button: {
                 color: "text.primary",
-                backgroundColor: "background.default"
+                m: "0 2px",
+                height: 0,
+                minHeight: 0,
+                mb: {
+                    lsm: "0px",
+                    xxs: "10px"
+                },
+                maxHeight: 0,
+                minWidth: 0,
+                p: "20px 18px",
+                fontSize: "15px",
+                fontWeight: 500,
+                textTransform: "capitalize",
+                "&.Mui-selected": {
+                    color: "text.primary",
+                    backgroundColor: "background.default"
+                }
             }
         }
     }

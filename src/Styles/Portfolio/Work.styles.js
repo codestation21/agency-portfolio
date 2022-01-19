@@ -1,7 +1,14 @@
 const styles = {
     ImageContainer: {
-        width: "350px",
-        height: "404px",
+        width: {
+            md: "350px",
+            smd: "280px",
+            lsm: "250px",
+            msm: "230px",
+            sm: "190px",
+            xxs: "100%"
+        },
+        height: "auto",
         position: "relative",
         a: {
             textDecoration: "none",
@@ -70,11 +77,22 @@ const styles = {
     },
     WorkTitle: {
         position: "absolute",
-        left: "-14%",
+        left: {
+            lsm: "-14%",
+            msm: "-8%",
+            sm: "-6%",
+            xxs: "-6%"
+        },
         bottom: "20%",
         width: "20%",
         textAlign: "left",
         fontWeight: 700,
+        fontSize: {
+            smd: "1.5rem",
+            lsm: "1.2rem",
+            sm: "1rem",
+            xxs: "1.2rem"
+        },
         transition: "0.3s ease",
         "&:hover": {
             color: "primary.main"

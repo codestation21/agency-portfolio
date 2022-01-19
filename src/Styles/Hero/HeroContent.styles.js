@@ -1,12 +1,22 @@
 const styles = {
     Container: {
-        width: "35%",
+        width: {
+            smd: "35%",
+            xxs: "100%"
+        },
         position: "relative",
         zIndex: "1"
     },
     Title: {
         fontWeight: 800,
-        fontSize: "3rem",
+        fontSize: {
+            md: "3rem",
+            smd: "2rem",
+            msm: "3rem",
+            sm: "2.5rem",
+            xs: "2.2rem",
+            xxs: "2rem"
+        },
         mb: "10px"
     },
     Slogan: {
@@ -37,11 +47,16 @@ const styles = {
         borderRadius: "5px",
         fontSize: "14px",
         fontWeight: 500,
+        transition: "0.3s ease",
         svg: {
             color: "background.default",
             fontSize: "17px",
             ml: "10px",
             mb: "-1px"
+        },
+        "&:hover": {
+            backgroundColor: "primary.main",
+            color: "background.default"
         }
     }
 };

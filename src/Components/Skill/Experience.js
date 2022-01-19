@@ -12,7 +12,7 @@ import styles from "Styles/Skill/Experience.styles";
 
 const Experience = () => {
     return (
-        <Box>
+        <Box sx={{ mb: { md: "0px", xxs: "20px" } }}>
             <Typography variant="h4" component="h4" sx={styles.Title}>
                 {Experiences.title1}<br />
                 {Experiences.title2}

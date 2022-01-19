@@ -12,9 +12,9 @@ const Solution = () => {
             <Grid container spacing={2}>
                 {Solutions &&
                     Solutions.map((solution, i) => (
-                        <Grid item md={3} key={i}>
+                        <Grid item md={3} sm={6} xxs={12} key={i}>
                             <Box sx={{ textAlign: "center" }}>
-                                <Box width="80%" component="img" src={solution.icon} />
+                                <Box sx={styles.Image} component="img" src={solution.icon} />
                                 <Typography variant="h6" component="h6" sx={styles.Title}>
                                     {solution.title}
                                 </Typography>

@@ -13,9 +13,9 @@ const Company = () => {
             <Grid container spacing={3} sx={{ alignItems: "center" }}>
                 {Companys &&
                     Companys.map((company, i) => (
-                        <Grid item md={3} key={i}>
+                        <Grid item msm={3} xxs={6} key={i}>
                             <Box sx={{ textAlign: "center" }}>
-                                <Box component="img" src={company.logo} />
+                                <Box component="img" sx={styles.Image} src={company.logo} />
                             </Box>
                         </Grid>
                     ))

@@ -14,7 +14,7 @@ import styles from "Styles/About/Myselft.styles";
 const Myself = () => {
     return (
         <Box sx={styles.Container}>
-            <Box sx={{ width: "35%" }}>
+            <Box sx={{ width: { md: "35%", xxs: "100%" } }}>
                 <Typography variant="h4" component="h4" sx={styles.Title}>
                     Let&apos;s Something <br />
                     Know About Myself

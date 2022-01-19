@@ -31,7 +31,7 @@ const Dialogs = ({ blog, handleClose }) => {
                     <Box sx={styles.Content}>
                         <Box component="img" sx={styles.Image} src={blog.image} alt="Blog" />
                         <Box sx={styles.TopContainer}>
-                            <Stack direction="row">
+                            <Stack direction={{ lsm: "row", xxs: "column" }}>
                                 <Typography variant="body1" component="p" sx={styles.BlogInfo}>
                                     {blog.userLink &&
                                         <Link href={blog.userLink}>
@@ -62,7 +62,7 @@ const Dialogs = ({ blog, handleClose }) => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Typography variant="body1" component="p" sx={{ mt: "5em" }}>
+                    <Typography variant="body1" component="p" sx={{ mt: { smd: "5em", lsm: "7em", sm: "1em" } }}>
                         {blog.description}
                     </Typography>
                 </DialogContentText>

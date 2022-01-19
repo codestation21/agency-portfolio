@@ -29,13 +29,13 @@ const styles = {
     },
     Title: {
         textTransform: "uppercase",
-        marginBottom: "6px",
+        mb: "6px",
         fontWeight: 600,
         fontSize: "20px"
     },
     Description: {
         fontSize: "15px",
-        marginTop: "12px"
+        mt: "12px"
     },
     Name: {
         position: "absolute",

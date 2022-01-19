@@ -10,7 +10,7 @@ const styles = {
     AwardTitle: {
         fontSize: "15px",
         fontWeight: 500,
-        marginTop: "5px"
+        mt: "5px"
     },
     Title: {
         fontSize: "2rem",

@@ -25,12 +25,12 @@ const styles = {
     ButtonGroup: {
         button: {
             color: "text.primary",
-            margin: "0 2px",
+            m: "0 2px",
             height: 0,
             minHeight: 0,
             maxHeight: 0,
             minWidth: 0,
-            padding: "20px 18px",
+            p: "20px 18px",
             fontSize: "15px",
             fontWeight: 500,
             textTransform: "capitalize",

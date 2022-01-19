@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Box, Grid, Stack, Typography, ButtonBase, Dialog } from "@mui/material";
-import Rodal from 'rodal';
-import 'rodal/lib/rodal.css';
 
 //Icons
 import { ClendarIcon } from "Utilis/Icons";
@@ -20,16 +18,14 @@ const SingleBlog = () => {
     const [open, setOpen] = useState(false);
     const handleClickOpen = (index) => () => {
         setOpen(index);
-        const header = document.querySelector('header');
-        const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-        header.style.paddingRight = `${scrollBarWidth}px`;
+        // const header = document.querySelector('header');
+        // const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+        // header.style.paddingRight = `${scrollBarWidth}px`;
     };
     const handleClose = () => {
         setOpen(false);
-        setTimeout(() => {
-            const header = document.querySelector('header');
-            header.style.paddingRight = "0px";
-        }, 250);
+        // const header = document.querySelector('header');
+        // header.style.paddingRight = "0px";
     };
     return (
         <Box sx={{ mt: "4rem" }}>
@@ -63,6 +59,7 @@ const SingleBlog = () => {
                                     </ButtonBase>
                                     <Dialog
                                         open={open === i}
+                                        disableScrollLock={true}
                                         onClose={handleClose}
                                         scroll="paper"
                                         maxWidth="md"

@@ -2,7 +2,7 @@ const styles = {
     SeeProjectBtn: {
         backgroundColor: "primary.main",
         color: "background.default",
-        padding: "12px 18px",
+        p: "12px 18px",
         fontSize: "15px",
         fontWeight: 500,
         svg: {
@@ -18,12 +18,12 @@ const styles = {
         div: {
             width: "25px",
             height: "3px",
-            margin: "6px 0",
+            m: "6px 0",
             backgroundColor: "text.primary",
             transition: "0.4s ease",
             "&.ripple1": {
                 width: "20px",
-                marginLeft: "auto"
+                ml: "auto"
             },
             "&.ripple3": {
                 width: "20px",

@@ -18,17 +18,32 @@ const styles = {
     },
     SubmitButton: {
         backgroundColor: "primary.main",
-        p: "15px 25px",
+        width: "78%",
+        height: "52px",
         mt: "10px",
         fontSize: "14px",
         fontWeight: 600,
         color: "background.default",
         borderRadius: "8px",
-        svg: {
+        ">svg": {
             fontSize: "18px",
             mb: "-3px",
             ml: "10px"
         }
+    },
+    ErrorMessage: {
+        mt: "5px",
+        color: "primary.main",
+        svg: {
+            mb: '-2px',
+            mr: '5px',
+            fontSize: "16px"
+        }
+    },
+    SendText: {
+        mt: "5px",
+        fontSize: "15px",
+        fontWeight: 500
     }
 };
 

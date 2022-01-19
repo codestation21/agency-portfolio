@@ -48,8 +48,8 @@ const styles = {
         svg: {
             color: "background.default",
             fontSize: "17px",
-            marginLeft: "10px",
-            marginBottom: "-1px"
+            ml: "10px",
+            mb: "-1px"
         }
     }
 };

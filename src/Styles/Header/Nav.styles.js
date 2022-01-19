@@ -2,7 +2,12 @@ const styles = {
     Navs: {
         textAlign: "center",
         a: {
-            m: "0 5px"
+            m: "0 5px",
+            "&.active": {
+                button: {
+                    color: "primary.main"
+                }
+            }
         }
     },
     Buttons: {

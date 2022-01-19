@@ -21,7 +21,7 @@ const Bar = () => {
     };
     return (
         <Box>
-            <Stack direction="row" sx={{ justifyContent: "right" }}>
+            <Stack direction="row" sx={{ justifyContent: "right", textAlign: "right" }}>
                 <Link
                     to="portfolio"
                     spy={true}

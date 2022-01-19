@@ -5,7 +5,7 @@ const styles = {
             xl: "20em",
             lg: "15em",
             md: "10em",
-            smd: "7em",
+            smd: "12em",
             lsm: "10em",
             msm: "9em",
             sm: "8em",

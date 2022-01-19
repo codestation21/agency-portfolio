@@ -23,7 +23,7 @@ const Header = () => {
                     <Grid item md={3} xxs={6} >
                         <Logo />
                     </Grid>
-                    <Grid item md={6} sx={{ display: { md: "unset", xxs: "none" } }}>
+                    <Grid item md={6} sx={{ display: { md: "block", xxs: "none" } }}>
                         <Nav />
                     </Grid>
                     <Grid item md={3} xxs={6}>

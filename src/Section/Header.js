@@ -26,7 +26,7 @@ const Header = () => {
                     <Grid item md={6} sx={{ display: { md: "block", xxs: "none" } }}>
                         <Nav />
                     </Grid>
-                    <Grid item md={3} xxs={6}>
+                    <Grid item md={3} xxs={6} sx={{ justifyContent: "right", textAlign: "right" }}>
                         <Bar />
                     </Grid>
                 </Grid>

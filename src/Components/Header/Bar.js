@@ -20,7 +20,7 @@ const Bar = () => {
         setDrawer(open);
     };
     return (
-        <Box>
+        <Box sx={{ textAlign: "right" }}>
             <Stack direction="row" sx={{ justifyContent: "right", textAlign: "right" }}>
                 <Link
                     to="portfolio"

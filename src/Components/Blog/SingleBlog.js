@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { Box, Grid, Stack, Typography, ButtonBase } from "@mui/material";
-import { styled } from '@mui/material/styles';
+import { useState } from "react";
+import { Box, Grid, Stack, Typography, ButtonBase, Dialog } from "@mui/material";
 import Rodal from 'rodal';
 import 'rodal/lib/rodal.css';
 
@@ -18,34 +17,20 @@ import Blogs from "Data/Blog/Blogs.data";
 import styles from "Styles/Blog/SingleBlog.styles";
 
 const SingleBlog = () => {
-    const [visible, setVisible] = useState(false);
-    const [hidden, setHidden] = useState(false);
-    const modalOpen = (index) => () => {
-        setVisible(index)
-        setHidden(true)
-    }
-    const modelClose = () => {
-        setVisible(false)
-    }
-    const onAnimationEnd = () => {
-        if (visible === false) {
-            setHidden(false)
-        }
-    }
-    useEffect(() => {
-        const body = document.querySelector('body');
+    const [open, setOpen] = useState(false);
+    const handleClickOpen = (index) => () => {
+        setOpen(index);
         const header = document.querySelector('header');
-        if (hidden) {
-            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-            body.style.overflow = 'hidden';
-            body.style.paddingRight = `${scrollBarWidth}px`;
-            header.style.paddingRight = `${scrollBarWidth}px`
-        } else if (!hidden) {
-            body.style.overflow = 'unset';
-            body.style.paddingRight = '0px';
-            header.style.paddingRight = '0px'
-        }
-    }, [hidden])
+        const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+        header.style.paddingRight = `${scrollBarWidth}px`;
+    };
+    const handleClose = () => {
+        setOpen(false);
+        setTimeout(() => {
+            const header = document.querySelector('header');
+            header.style.paddingRight = "0px";
+        }, 250);
+    };
     return (
         <Box sx={{ mt: "4rem" }}>
             <Grid container spacing={4}>
@@ -72,23 +57,21 @@ const SingleBlog = () => {
                                             {blog.time}
                                         </Typography>
                                     </Stack>
-                                    <ButtonBase sx={styles.Button} onClick={modalOpen(i)}>
+                                    <ButtonBase sx={styles.Button} onClick={handleClickOpen(i)}>
                                         Read More
                                         <ArrowForwardTwoToneIcon />
                                     </ButtonBase>
-                                    <Modal
-                                        visible={visible === i}
-                                        onClose={modelClose}
-                                        customMaskStyles={{ background: '#0B0B13AB' }}
-                                        enterAnimation='slideDown'
-                                        leaveAnimation='slideDown'
-                                        onAnimationEnd={onAnimationEnd}
-                                        sx={styles.Modal}
+                                    <Dialog
+                                        open={open === i}
+                                        onClose={handleClose}
+                                        scroll="paper"
+                                        maxWidth="md"
                                     >
                                         <Dialogs
                                             blog={blog}
+                                            handleClose={handleClose}
                                         />
-                                    </Modal>
+                                    </Dialog>
                                 </Box>
                             </Box>
                         </Grid>
@@ -99,7 +82,3 @@ const SingleBlog = () => {
     );
 };
 export default SingleBlog;
-
-
-//Custom Component
-const Modal = styled(Rodal)``;

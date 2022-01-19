@@ -3,20 +3,9 @@ const styles = {
         px: "5px",
         borderRadius: "5px"
     },
-    Scroll: {
-        mt: "10px",
-        width: "100%",
-        height: "505px",
-        overflowY: "auto",
-        pb: "5px",
-        pr: "15px"
-    },
-    Divider: {
-        my: "10px"
-    },
     Content: {
         position: "relative",
-        height: "28em",
+        height: "26em",
     },
     Image: {
         width: "100%",
@@ -30,7 +19,6 @@ const styles = {
         bottom: "0",
         left: "10%",
         right: "10%",
-        zIndex: "99",
         transform: "translateY(50%)",
         p: "25px 20px",
         boxShadow: theme => `0 0 20px ${theme.palette.primary.box_shadow_black}`,

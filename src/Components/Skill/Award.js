@@ -46,7 +46,7 @@ const Award = () => {
                     <Box>
                         <Typography variant="h5" component="h5" sx={styles.Title}>
                             Great Achievements <br />
-                            In My Career
+                            In Our Career
                         </Typography>
                     </Box>
                 </Grid>

@@ -7,22 +7,22 @@ import Graphic from "Assets/about/graphic.png";
 export default [
     {
         title: "UI/UX",
-        description: "Landing Page, User Flow, Wireframing, Prototyping, Mobile App Design, Website, Web App.",
+        description: "Start with listening to your idea, research, make a wireframe, build a prototype, finalizing the UI/UX.",
         icon: Ui
     },
     {
         title: "Web Development",
-        description: "Landing Page, User Flow, Wireframing, Prototyping, Mobile App Design, Website, Web App.",
+        description: "Create a highspeed, modern and responsive website and web application for you.",
         icon: Web
     },
     {
         title: "App Development",
-        description: "Landing Page, User Flow, Wireframing, Prototyping, Mobile App Design, Website, Web App.",
+        description: "Both Andriod and ios are developing here. We offer a cross-platform solution that is easy to use and maintain.",
         icon: App
     },
     {
         title: "Graphic Design",
-        description: "Landing Page, User Flow, Wireframing, Prototyping, Mobile App Design, Website, Web App.",
+        description: "We provide all kinds of designs like logos, flyers, visiting cards, social media, etc.",
         icon: Graphic
     }
 ]

@@ -12,14 +12,13 @@ const HeroContent = () => {
         <Box sx={styles.Container}>
             <Typography variant="h2" component="h2" sx={styles.Title}>
                 We are <br />
-                CodeStation21
+                Code Station21
             </Typography>
             <Typography variant="h6" component="h6" sx={styles.Slogan}>
                 Your Dream, We Build
             </Typography>
             <Typography variant="body1" component="p" sx={styles.Description}>
-                Where the wonderful Website & Design born. We are
-                here to make your company more professional and brand.
+                Where an idea turns into a project. Help your startups, business, and ideas to grow more and solve the problem with the power of code.
             </Typography>
             <Link
                 to="portfolio"

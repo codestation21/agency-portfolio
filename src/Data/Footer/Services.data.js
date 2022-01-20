@@ -1,8 +1,8 @@
 export default [
-    "Web Design",
-    "Graphics Design",
     "Web Development",
+    "Mobile apps development",
+    "UI/UX Design",
+    "Graphics Design",
     "Digital Marketing",
-    "It Consulting",
-    "Co-Working"
+    "SEO and SMM"
 ]

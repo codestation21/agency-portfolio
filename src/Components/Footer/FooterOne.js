@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 //Icons
-import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, YoutubeIcon, BehaceIcon } from "Utilis/Icons";
+import { MapIcon, EmailIcon, PhoneIcon, FacebookIcon, TwitterIcon, BehaceIcon } from "Utilis/Icons";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 //Logo
 import Logo from "Assets/header/logo.png";
@@ -23,8 +24,7 @@ const FooterOne = () => {
                 </Box>
                 <Box>
                     <Typography variant="body1" component="p">
-                        256 Elizaberth Ave, Brooklyn,
-                        CA, 90025
+                        171/5, Borhanpur Lane, 6 Hazaribagh Road, Dhaka 1211
                     </Typography>
                 </Box>
             </Stack>
@@ -33,10 +33,10 @@ const FooterOne = () => {
                     <EmailIcon />
                 </Box>
                 <Box>
-                    <Link href="mailto:supportconbiz@gmail.com">
+                    <Link href="mailto:info@codestation21.com">
                         <a>
                             <Typography variant="body1" component="p">
-                                supportconbiz@gmail.com
+                                info@codestation21.com
                             </Typography>
                         </a>
                     </Link>
@@ -47,41 +47,41 @@ const FooterOne = () => {
                     <PhoneIcon />
                 </Box>
                 <Box>
-                    <Link href="tel:+012 (345) 678 99">
+                    <Link href="tel:+8801552938771">
                         <a>
                             <Typography variant="body1" component="p">
-                                +012 (345) 678 99
+                                +880 1552-938771
                             </Typography>
                         </a>
                     </Link>
                 </Box>
             </Stack>
             <Stack direction="row" sx={styles.Social}>
-                <Link href="/">
-                    <a>
+                <Link href="https://github.com/codestation21">
+                    <a target="_blank">
+                        <ButtonBase>
+                            <GitHubIcon />
+                        </ButtonBase>
+                    </a>
+                </Link>
+                <Link href="https://www.facebook.com/codestation21">
+                    <a target="_blank">
                         <ButtonBase>
                             <FacebookIcon />
                         </ButtonBase>
                     </a>
                 </Link>
-                <Link href="/">
-                    <a>
+                <Link href="https://twitter.com/codestation21">
+                    <a target="_blank">
                         <ButtonBase>
                             <TwitterIcon />
                         </ButtonBase>
                     </a>
                 </Link>
-                <Link href="/">
-                    <a>
+                <Link href="https://behance.com/codestation21">
+                    <a target="_blank">
                         <ButtonBase>
                             <BehaceIcon />
-                        </ButtonBase>
-                    </a>
-                </Link>
-                <Link href="/">
-                    <a>
-                        <ButtonBase>
-                            <YoutubeIcon />
                         </ButtonBase>
                     </a>
                 </Link>

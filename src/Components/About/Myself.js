@@ -17,7 +17,7 @@ const Myself = () => {
             <Box sx={{ width: { md: "35%", xxs: "100%" } }}>
                 <Typography variant="h4" component="h4" sx={styles.Title}>
                     Let&apos;s Something <br />
-                    Know About Myself
+                    Know Great About Us
                 </Typography>
                 <Typography variant="body1" component="p" className="sdjh" sx={styles.Description}>
                     We are a group of professional software developer
@@ -27,19 +27,19 @@ const Myself = () => {
                     <Stack direction="row" sx={styles.Features}>
                         <DoneIcon />
                         <Typography variant="body1" component="p">
-                            Professional Services
+                            100% client satisfaction
                         </Typography>
                     </Stack>
                     <Stack direction="row" sx={styles.Features}>
                         <DoneIcon />
                         <Typography variant="body1" component="p">
-                            Professional Services
+                            Quality Service
                         </Typography>
                     </Stack>
                     <Stack direction="row" sx={styles.Features}>
                         <DoneIcon />
                         <Typography variant="body1" component="p">
-                            Professional Services
+                            Lifetime aftersales supports
                         </Typography>
                     </Stack>
                 </Box>

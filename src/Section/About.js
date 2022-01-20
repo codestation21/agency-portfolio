@@ -12,7 +12,7 @@ const About = () => {
         <Container maxWidth={false} disableGutters as="section" sx={{ pt: "5em" }} id="about">
             <SectionHeading
                 value1="We Provide Best Solutions"
-                value2="For Your Aggency"
+                value2="For Your Business"
                 border={true}
             />
             <Solution />

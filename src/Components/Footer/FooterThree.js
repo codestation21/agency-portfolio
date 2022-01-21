@@ -42,7 +42,7 @@ const FooterThree = () => {
                 Newsletters
             </Typography>
             <Typography variant="body1" component="p" sx={styles.Description}>
-                Let's be friends and get interesting news about us
+                Let&apos;s be friends and get interesting news about us
             </Typography>
             <Box component="form" onSubmit={handleSubmit(onSubmit)}>
                 <InputBase

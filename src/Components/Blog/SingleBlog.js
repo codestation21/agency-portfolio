@@ -18,15 +18,17 @@ const SingleBlog = () => {
     const [open, setOpen] = useState(false);
     const handleClickOpen = (index) => () => {
         setOpen(index);
-        // const header = document.querySelector('header');
-        // const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-        // header.style.paddingRight = `${scrollBarWidth}px`;
+        const header = document.querySelector('header');
+        const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+        header.style.paddingRight = `${scrollBarWidth}px`;
     };
     const handleClose = () => {
         setOpen(false);
-        // const header = document.querySelector('header');
-        // header.style.paddingRight = "0px";
     };
+    const RemovePadding = () => {
+        const header = document.querySelector('header');
+        header.style.paddingRight = "0px";
+    }
     return (
         <Box sx={{ mt: "4rem", mb: "5.5em" }}>
             <Grid container spacing={4}>
@@ -59,10 +61,14 @@ const SingleBlog = () => {
                                     </ButtonBase>
                                     <Dialog
                                         open={open === i}
-                                        disableScrollLock={true}
                                         onClose={handleClose}
                                         scroll="paper"
                                         maxWidth="md"
+                                        TransitionProps={{
+                                            onExited: () => {
+                                                RemovePadding();
+                                            }
+                                        }}
                                     >
                                         <Dialogs
                                             blog={blog}

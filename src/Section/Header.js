@@ -17,19 +17,21 @@ const Header = () => {
         });
     }, []);
     return (
-        <Container maxWidth={false} disableGutters sx={{}} className={scroll ? "sticky" : ""} sx={styles.Container} as="header">
-            <Grid container spacing={2} sx={{ alignItems: "center" }}>
-                <Grid item md={3} xxs={6} >
-                    <Logo />
+        <Box className={scroll ? "sticky" : ""} sx={styles.Container} component="header">
+            <Container maxWidth={false} disableGutters>
+                <Grid container spacing={2} sx={{ alignItems: "center" }}>
+                    <Grid item md={3} xxs={6} >
+                        <Logo />
+                    </Grid>
+                    <Grid item md={6} xxs={0} sx={{ display: { md: "block", xxs: "none" } }}>
+                        <Nav />
+                    </Grid>
+                    <Grid item md={3} xxs={6}>
+                        <Bar />
+                    </Grid>
                 </Grid>
-                <Grid item md={6} xxs={0} sx={{ display: { md: "block", xxs: "none" } }}>
-                    <Nav />
-                </Grid>
-                <Grid item md={3} xxs={6}>
-                    <Bar />
-                </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </Box>
     );
 };
 export default Header;

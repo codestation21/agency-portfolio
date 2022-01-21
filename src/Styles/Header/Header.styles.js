@@ -3,6 +3,7 @@ const styles = {
         position: "fixed",
         top: 0,
         left: 0,
+        width: "100%",
         py: {
             xxl: "14px",
             xxs: "10px"

@@ -50,10 +50,10 @@ const BottomFooter = () => {
                         <ButtonBase>
                             Purchase
                         </ButtonBase>
-                        <ButtonBase>
+                        <ButtonBase onClick={handleClickOpen('privacy')}>
                             Privacy Policy
                         </ButtonBase>
-                        <ButtonBase>
+                        <ButtonBase onClick={handleClickOpen('terms')}>
                             Terms of Service
                         </ButtonBase>
                     </Stack>

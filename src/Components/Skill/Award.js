@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography, Divider, Rating } from "@mui/material";
-
-//Counterup
-import Odometers from "Utilis/Odometers";
+import { useState } from "react";
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 //Data
 import Awards from "Data/Skill/Award.data";
@@ -10,6 +10,12 @@ import Awards from "Data/Skill/Award.data";
 import styles from "Styles/Skill/Award.styles";
 
 const Award = () => {
+    const [view, setView] = useState(false);
+    const onVisibilityChange = (isVisible) => {
+        if (isVisible) {
+            setView(true);
+        }
+    };
     return (
         <Box>
             <Divider sx={styles.Divider} />
@@ -23,7 +29,9 @@ const Award = () => {
                                         <Box sx={{ textAlign: "center" }}>
                                             <Typography variant="h4" component="h4" sx={styles.AwardNumber}>
                                                 <Stack direction="row" sx={{ justifyContent: "center" }}>
-                                                    <Odometers value={award.award} />
+                                                    <VisibilitySensor onChange={onVisibilityChange} offset={{ top: -50 }} delayedCall>
+                                                        <CountUp end={view ? award.award : 0} />
+                                                    </VisibilitySensor>
                                                     <Typography variant="h4" component="h4">
                                                         +
                                                     </Typography>
